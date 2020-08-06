@@ -98,6 +98,7 @@ body {
   top: 35px;
   overflow: hidden;
   margin-bottom: 20px;
+  margin-top: 10px;
   background-color: white;
 }
 .logo {
@@ -146,6 +147,7 @@ body {
   align-items: center;
   font-size: 175%;
 }
+
 .header-text-box h1 strong {
   font-weight: 700;
 }
@@ -154,4 +156,51 @@ body {
 }
 .header-text-box p {
   font-size: 90%;
+  margin-bottom: 40px;
+}
+
+.search-city-box {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 38%;
+  margin-left: 31%;
+  text-align: left;
+  padding: 16px 16px;
+}
+.search-btn {
+  display: inline;
+
+  /* width: 120px;
+  height: 30px;
+  float: right; */
+  background-color: #a00da7;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  font-size: 50%;
+}
+
+.input-group label {
+  background-color: white;
+  color: black;
+  outline: none;
+  border: none;
+
+  font-size: 50%;
+  font-weight: 600;
+  display: inline-block;
+  padding: 8px 8px;
+}
+.input-group label input {
+  width: 220px;
+  border: none;
+  outline: none;
+}
+.input-group label:first-child {
+  border-right: 2px solid grey;
+}
+.find-city {
+  margin-left: -8px;
 }
