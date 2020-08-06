@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20x;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  width: 80%;
+  margin-left: 10%;
+}
+
+/* ************************* */
+/*           Top Nav         */
+
+.top-nav {
+  width: 100%;
+}
+.top-nav ul {
+  display: inline-block;
+}
+
+.nav-list ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
