@@ -20,13 +20,28 @@ body {
   margin-left: 10%;
 }
 
+/* .clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+} */
+
 /* ************************* */
 /*           Top Nav         */
 
 .menu-outer {
+  background-color: #f4f4f4;
   width: 100%;
-  margin-top: 10px;
+  position: fixed;
+  top: 0;
+  padding: 10px 0;
   display: inline-flex;
+  z-index: 20;
 }
 .table {
   display: table;
@@ -52,12 +67,91 @@ body {
   border-bottom: 2px solid transparent;
 }
 .table li a:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #a00da7;
 }
 
 .sign-in {
   /* position: absolute; */
-  padding-right: 20px;
+
+  padding-right: 50px;
   padding-left: 10px;
   border-left: 1px solid black;
+}
+.sign-in a:link,
+.sign-in a:visited {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+}
+
+.sign-in a:hover,
+.sign-in a:active {
+  border-bottom: 2px solid #a00da7;
+}
+
+/* ************************* */
+/*     logo and add-listing  */
+
+.logo-add-listing {
+  width: 100%;
+  position: fixed;
+  top: 35px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.logo {
+  margin-left: 20px;
+  float: left;
+}
+.add-listing {
+  float: right;
+  background-color: #a00da7;
+  margin: 20px 20px;
+  width: 165px;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: center;
+  height: 40px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: white;
+}
+
+/* ************************* */
+/*    Header  */
+
+.header-img-box {
+  margin: 0;
+  width: 100%;
+  height: 610px;
+  margin-top: 80px;
+  background-image: linear-gradient(
+      to right,
+      rgba(160, 13, 167, 0.28),
+      rgba(202, 10, 10, 0.4)
+    ),
+    url("./img/header.png");
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-text-box {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 25%;
+  margin: 0 auto;
+  align-items: center;
+  font-size: 175%;
+}
+.header-text-box h1 strong {
+  font-weight: 700;
+}
+.header-text-box h1 {
+  font-weight: 400;
+}
+.header-text-box p {
+  font-size: 90%;
 }
