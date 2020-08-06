@@ -11,6 +11,10 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+body {
+  background-color: #f4f4f4;
+}
+
 .row {
   width: 80%;
   margin-left: 10%;
@@ -19,14 +23,41 @@ html {
 /* ************************* */
 /*           Top Nav         */
 
-.top-nav {
+.menu-outer {
   width: 100%;
+  margin-top: 10px;
+  display: inline-flex;
 }
-.top-nav ul {
-  display: inline-block;
+.table {
+  display: table;
+  margin: 0 auto;
+}
+.nav-list {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-.nav-list ul li {
+.table li {
+  display: inline;
+  margin: 20px 10px;
+  list-style: none;
+}
+.table li a {
   text-decoration: none;
-  list-style-type: none;
+
+  color: black;
+  border-bottom: 2px solid transparent;
+}
+.table li a:hover {
+  border-bottom: 2px solid black;
+}
+
+.sign-in {
+  /* position: absolute; */
+  padding-right: 20px;
+  padding-left: 10px;
+  border-left: 1px solid black;
 }
